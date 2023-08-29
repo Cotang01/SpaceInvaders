@@ -54,8 +54,8 @@ class Scoreboard:
         )
 
         self.level_rect = self.level_image.get_rect()
-        self.level_rect.right = self.high_score_rect.right
-        self.level_rect.top = self.high_score_rect.bottom + 10
+        self.level_rect.right = self.score_rect.right
+        self.level_rect.top = self.score_rect.bottom + 10
 
     def prep_ship(self):
         """ Вывод количества оставшихся жизней в графическом виде """
