@@ -21,7 +21,7 @@ class Settings:
 
         # настройки пуль
         self.bullet_speed = 1.0
-        self.bullet_width = 500
+        self.bullet_width = 5
         self.bullet_height = 25
         self.bullet_colour = (60, 200, 200)
         self.bullets_allowed = 3
