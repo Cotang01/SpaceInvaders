@@ -10,7 +10,7 @@ from button import Button
 from scoreboard import Scoreboard
 
 
-class AlienInvasion:
+class SpaceInvaders:
     """ Основной класс игры """
 
     def __init__(self):
@@ -89,10 +89,6 @@ class AlienInvasion:
             self.ship.moving_right = False
         elif event.key == pygame.K_a:
             self.ship.moving_left = False
-        elif event.key == pygame.K_w:
-            self.ship.moving_up = False
-        elif event.key == pygame.K_s:
-            self.ship.moving_down = False
 
     def _check_play_button(self, mouse_pos):
         # если мышка кликает по кнопку, то запускается игра
@@ -244,5 +240,5 @@ class AlienInvasion:
 
 
 if __name__ == '__main__':
-    my_game = AlienInvasion()
+    my_game = SpaceInvaders()
     my_game.run_game()
